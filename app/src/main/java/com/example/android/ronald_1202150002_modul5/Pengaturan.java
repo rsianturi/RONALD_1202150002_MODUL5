@@ -54,11 +54,11 @@ SharedPreferences.Editor spe;
     }
 
     public String getShapeColor(int i) {
-        if (i==R.color.red){
+        if (i==R.color.orange){
             return "Red";
         }else if (i==R.color.green){
             return "Green";
-        }else if (i==R.color.blue){
+        }else if (i==R.color.yellow){
             return "Blue";
         }else{
             return "Default";
@@ -66,12 +66,12 @@ SharedPreferences.Editor spe;
     }
     //mendapatkan id dari warna yang akan digunakan
     public int getColorid(int i){
-        if (i==R.color.red){
-            return R.id.red;
+        if (i==R.color.orange){
+            return R.id.orange;
         }else if (i==R.color.green){
             return R.id.green;
-        }else if (i==R.color.blue){
-            return R.id.blue;
+        }else if (i==R.color.yellow){
+            return R.id.yellow;
         }else{
             return R.id.white;
         }
@@ -96,14 +96,14 @@ SharedPreferences.Editor spe;
                 //mendapatkan id radio button yang di pilih
                 int a = radG.getCheckedRadioButtonId();
                 switch (a){
-                    case R.id.red:
-                        colorid = R.color.red;
+                    case R.id.orange:
+                        colorid = R.color.orange;
                         break;
                     case R.id.green:
                         colorid = R.color.green;
                         break;
-                    case R.id.blue:
-                        colorid = R.color.blue;
+                    case R.id.yellow:
+                        colorid = R.color.yellow;
                         break;
                     case R.id.white:
                         colorid = R.color.white;
